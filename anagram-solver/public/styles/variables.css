@@ -1,0 +1,12 @@
+:root {
+    --bg: #0f1220;
+    --panel: #171b2e;
+    --text: #e9ecf1;
+    --muted: #a8b0c2;
+    --accent: #7cc6ff;
+    --accent-2: #adf7b6;
+    --danger: #ff7b7b;
+    --radius: 16px;
+    --gap: 12px;
+    --font: ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial;
+}
