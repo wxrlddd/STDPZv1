@@ -8,6 +8,14 @@ export function setConsent(value) {
     localStorage.setItem(CONSENT_KEY, value);
 }
 
+export function hasAnsweredConsent() {
+    return getConsent() === 'accepted' || getConsent() === 'declined';
+}
+
 export function hasConsent() {
     return getConsent() === 'accepted';
+}
+
+export function clearConsent() {
+    localStorage.removeItem(CONSENT_KEY);
 }

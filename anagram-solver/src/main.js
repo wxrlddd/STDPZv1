@@ -1,10 +1,9 @@
 import { initApp } from './app.js';
+import { CookieBanner } from './components/CookieBanner.js';
+import { hasAnsweredConsent } from './services/consent.service.js';
 
 initApp();
 
-import { CookieBanner } from './components/CookieBanner.js';
-import { hasConsent } from './services/consent.service.js';
-
-if (!hasConsent()) {
+if (!hasAnsweredConsent()) {
     document.body.append(CookieBanner());
 }

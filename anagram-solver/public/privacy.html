@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy</title>
+    <style>
+        :root {
+            --bg: #0b1020;
+            --card: rgba(255, 255, 255, 0.08);
+            --text: #f5f7ff;
+            --muted: #b7c0d8;
+            --border: rgba(255, 255, 255, 0.12);
+            --accent: #9ecbff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top left, rgba(58, 87, 170, 0.35), transparent 35%),
+                linear-gradient(135deg, #0b1228 0%, #050814 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 28px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: 36px;
+        }
+
+        .subtitle {
+            margin: 0 0 28px;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        section {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+
+        section:first-of-type {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+        }
+
+        h2 {
+            margin: 0 0 12px;
+            font-size: 24px;
+        }
+
+        p, li {
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        ul {
+            margin: 10px 0 0 20px;
+            padding: 0;
+        }
+
+        .note {
+            margin-top: 24px;
+            padding: 14px 16px;
+            border-radius: 12px;
+            background: rgba(158, 203, 255, 0.08);
+            border: 1px solid rgba(158, 203, 255, 0.2);
+            color: var(--muted);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 24px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 20px 14px 40px;
+            }
+
+            .card {
+                padding: 20px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <article class="card">
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">
+                Цей веб-додаток є навчальним проєктом для гри в анаграми.
+                Ми поважаємо конфіденційність користувача та не збираємо персональні дані через сервер.
+            </p>
+
+            <section>
+                <h2>Загальна інформація</h2>
+                <p>
+                    Застосунок працює локально в браузері користувача.
+                    Основна логіка гри виконується на стороні клієнта без передачі персональних даних на зовнішні сервери.
+                </p>
+            </section>
+
+            <section>
+                <h2>Які дані зберігаються</h2>
+                <p>Додаток може зберігати локально такі дані:</p>
+                <ul>
+                    <li>ім’я гравця;</li>
+                    <li>налаштування гри, зокрема складність і ліміт часу;</li>
+                    <li>згоду або відмову щодо використання cookies та LocalStorage.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Використання cookies та LocalStorage</h2>
+                <p>Cookies та LocalStorage використовуються для:</p>
+                <ul>
+                    <li>збереження налаштувань користувача;</li>
+                    <li>запам’ятовування рішення щодо банера cookies;</li>
+                    <li>покращення зручності використання застосунку.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Передача даних</h2>
+                <p>
+                    Жодні дані не передаються третім особам.
+                    Уся інформація, що використовується застосунком, зберігається лише локально в браузері користувача.
+                </p>
+            </section>
+
+            <section>
+                <h2>Права користувача</h2>
+                <p>Користувач має право:</p>
+                <ul>
+                    <li>очистити LocalStorage та cookies через налаштування браузера;</li>
+                    <li>відмовитися від використання cookies;</li>
+                    <li>припинити використання застосунку у будь-який момент.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Відповідальність</h2>
+                <p>
+                    Додаток надається «як є» без будь-яких гарантій.
+                    Проєкт створено виключно у навчальних цілях.
+                </p>
+            </section>
+
+            <div class="note">
+                Останнє оновлення: 2026
+            </div>
+
+            <a class="back-link" href="/public/">← Повернутися до застосунку</a>
+        </article>
+    </main>
+</body>
+</html>
