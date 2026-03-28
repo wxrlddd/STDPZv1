@@ -1,4 +1,9 @@
 import { el } from '../utils/dom.js';
-export function Button(label, onClick, variant='primary'){
-    return el('button', { class:`btn ${variant}`, onClick, text:label });
+
+export function Button(text, onClick, variant = 'primary') {
+    return el('button', {
+        class: variant === 'ghost' ? 'btn btn-ghost' : 'btn',
+        text,
+        onclick: onClick || undefined
+    });
 }

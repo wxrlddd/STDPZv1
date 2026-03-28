@@ -1,11 +1,23 @@
 export function el(tag, props = {}, children = []) {
-    const n = document.createElement(tag);
-    Object.entries(props).forEach(([k, v]) => {
-        if (k === 'class') n.className = v;
-        else if (k === 'text') n.textContent = v;
-        else if (k.startsWith('on') && typeof v === 'function') n.addEventListener(k.slice(2).toLowerCase(), v);
-        else n.setAttribute(k, v);
+    const node = document.createElement(tag);
+
+    Object.entries(props).forEach(([key, value]) => {
+        if (value == null) return;
+
+        if (key === 'class') {
+            node.className = value;
+        } else if (key === 'text') {
+            node.textContent = value;
+        } else if (key.startsWith('on') && typeof value === 'function') {
+            node.addEventListener(key.slice(2), value);
+        } else {
+            node.setAttribute(key, value);
+        }
     });
-    (Array.isArray(children) ? children : [children]).filter(Boolean).forEach(c => n.append(c));
-    return n;
+
+    children.forEach((child) => {
+        node.append(child instanceof Node ? child : document.createTextNode(child));
+    });
+
+    return node;
 }
