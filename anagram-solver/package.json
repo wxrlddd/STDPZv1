@@ -5,9 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "npx serve . -l 5173",
-    "docs": "jsdoc -c jsdoc.json"
+    "docs": "jsdoc -c jsdoc.json",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "jsdoc": "^4.0.4"
+    "@storybook/html-vite": "^10.3.3",
+    "jsdoc": "^4.0.4",
+    "storybook": "^10.3.3",
+    "vite": "^7.0.0"
   }
 }
